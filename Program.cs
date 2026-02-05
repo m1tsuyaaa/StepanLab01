@@ -3,7 +3,7 @@
 class Program {
   static void Main() {
     int baseNumber, exponent, powerResult, secondCharIndex, startCounter, initialValue, originalNumber, transformedNumber;
-    string numberString, resultString1;
+    string numberString, resultString;
 
     int minNumberForTransformation = 100;
     
@@ -39,9 +39,9 @@ class Program {
       if (originalNumber < minNumberForTransformation) {
           Console.WriteLine("\nError: Input number must be >= 100 and contain more than two digits");
       } else {
-        numberString = originalNumber.ToString();
-        resultString1 = numberString.Remove(secondCharIndex, 1) + numberString[secondCharIndex];
-        transformedNumber = int.Parse(resultString1);
+        numberString = originalNumber.ToString();1
+        resultString = numberString.Remove(secondCharIndex, 1) + numberString[secondCharIndex];
+        transformedNumber = int.Parse(resultString);
 
         Console.WriteLine($"\nOriginal number: {originalNumber}");
         Console.WriteLine($"Transformed number: {transformedNumber}");
