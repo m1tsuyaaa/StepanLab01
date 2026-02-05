@@ -6,7 +6,7 @@ class Program {
     string numberString, resultString;
 
     int minNumberForTransformation = 100;
-
+    
     secondCharIndex = 1;
     startCounter = 0;
     initialValue = 1;
