@@ -39,7 +39,7 @@ class Program {
       if (originalNumber < minNumberForTransformation) {
           Console.WriteLine("\nError: Input number must be >= 100 and contain more than two digits");
       } else {
-        numberString = originalNumber.ToString();
+        numberString = originalNumber.ToString();1
         resultString = numberString.Remove(secondCharIndex, 1) + numberString[secondCharIndex];
         transformedNumber = int.Parse(resultString);
 
